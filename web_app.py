@@ -48,6 +48,27 @@ with st.sidebar:
         * 必须是完全同一个音频文件才算相同。
         * **适合场景**：精确的数据备份、迁移。
         """)
+    
+    with st.expander("⚠️ 使用限制", expanded=False):
+        st.markdown("""
+        **不支持以下类型：**
+        * ❌ 动态歌单（如每日推荐、私人雷达等）
+        * ❌ 专辑
+        * ✅ 仅支持用户创建的普通歌单
+        """)
+    
+    st.markdown("---")
+    
+    st.markdown(
+        """
+        <div style="text-align: center;">
+            <a href="https://github.com/wendaining/NetEase_Playlist_Analyzer" target="_blank" style="text-decoration: none;">
+                <img src="https://img.shields.io/badge/GitHub-项目地址-blue?logo=github" alt="GitHub">
+            </a>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
         
     st.caption("Core logic powered by `pyncm` & `pandas`")
 
